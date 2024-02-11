@@ -1,0 +1,99 @@
+body {
+    font-family: 'Verdana', sans-serif;
+}
+
+h1, h2 {
+    margin-bottom: 30px;
+    color: #11a159;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+   font-size: 24px;
+}
+
+ul {
+    border: 2px solid #000;
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+}
+
+div.container {
+    text-align: center;
+}
+
+form {
+    /* style as grid to create multiple columns */
+    display: grid;
+    margin: 0 auto;
+    /* specifies number of columns (2) */
+    /* second column is 2x the size of the first col*/
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+
+label {
+    text-align: right;
+}
+
+/* apply styling specifically for the 'submit' button */
+input[type="submit"] {
+    background-color: #ADD8E6;
+    border-radius: 10px;
+    padding: 10px;
+    grid-column: span 2;
+    width: 50%;
+    font-family: 'Verdana', sans-serif;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* add background color to alternate lines in table */
+tr:nth-child(even) {
+    background-color: #ADD8E6;
+}
+
+/* add background color to alternate lines in table */
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.icon {
+    position: fixed;
+    width: 50px;
+    right: 35px;
+    top: 100px;
+    z-index: 100;
+    display: inline-block;
+}
+
+.icon a {
+    margin-right: 10px;
+}
+
+.icon img {
+    width: 50px;
+    height: auto;
+}
+
+.food-image {
+    background-image: url('img/ice_cream.webp');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: auto;
+}
+
+.food-text {
+    display: inline-block;
+    margin-left: 20px;
+}
